@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Nebaye Portfolio</title>
+<meta name="viewport" content="width=device-width,initial-scale">
+<link rel = "stylesheet" href = "style.css">
+</head>
+<body>   
+<div id="header">
+<!--     Using div containers and adding display flex inside css allows you to flex the text for examplple the nav bar -->
+    <div class="container">
+        <nav>
+    <img src="images/Nslogo-removebg-preview.png" class="logo">
+    <ul>
+        <li><a href= "#">Home</a></li>
+        <li><a href= "#">about</a></li>
+        <li><a href= "#">services</a></li>
+        <li><a href= "#">Portfolio</a></li>
+        <li><a href= "#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class = "header-text">
+            <p>UI/UX Designer</p>
+            <h1> Hi, I'm <span>Nebaye</span><br> I am from Hercules CA and I like to have fun </h1> 
+        </div>
+    </div>
+    </div>
+<!--------------------- About ------------------->
+    <div id= "about">
+        <div class = "row">
+             <div class = "about-col-2">
+        <img src = "images/">
+    </div>
+    <div class = "about-col-2">
+<!--        The H1 tag is the header or title tag-->
+        <h1 class= "sub-title">About Me</h1> 
+        <p>I was born on October 8, 2007 and I. Grew up In Hercules California. I like to play videogames and ride my bike and want to be the best version of me. I go to Hercules Highschool and I like to hang out with my friends on Friday'</p>
+        <div class = "tab-titles">
+             <p class="tab-links" onclick="opentab('skills')"></p>
+             <p class="tab-links" onclick="opentab('experience')"></p>
+             <p class="tab-links" onclick="opentab('ventures')"></p>
+<!--     A Div defines a division or a section in an HTML document-->
+        </div>
+    <div class = "tab-contents active-tab"  id= "skills"></div>
+     <ul>
+    <li><span>UI/UX</span><br>Nebaye's Portfolio</li>
+     <li><span>Web Development</span><br>Nebaye's Portfolio 101</li>
+     <li><span>Web Development</span><br>Nebaye's Portfolio 102</li>
+    </ul>
+</div> 
+<div class = "tab-contents" id ="experience">
+    <ul> Ul is an unordered list
+        <li><span>2023-Current</span><br>Hidden Genius Project | Genius</li>
+        <li><span>2021-Current</span><br>Hercules High School | Junior</li>
+        <li><span>2007-Current</span><br>Lived In Hercules</li>
+    </ul>
+ </div>
+ <div class="tab-contents" id="ventures">
+            <ul> 
+                <li><span>2023</span><br>Richmond 7 genius</li>
+                <li><span>2021</span><br>Hercules highschool Freshman</li>
+                <li><span>2007</span><br>Born in Oakland, CA then immeditaly moved to Hercules</li>
+            </ul>
+       </div>
+         </div>
+           </div>
+    
+    
+    
+    <!--               JavaScript-->
+               <script>
+                   function opentab(tabId) { 
+        //Hide all tab contents    
+        const tabContents = document.querySelectorAll('.tab-contents');
+        for (const tab of tabContents) {
+            tab.classList.remove('active-tab');
+        }
+        
+        // Show the selected tab content
+        const selectedTab = document.getElementById(tabId);
+        if (selectedTab) {
+        selectedTab.classList.add('active-tab');
+     }
+}
+                   
+                    </script>
+    
+<!--Services-->
+        
+        <div class="services">
+         <div class="container">
+             <h1 class="sub-title">My services</h1>
+             <div class="services-list">
+                  <div>
+                      <i class="fas fa-code"></i>
+                      <h2>Hidden genius project genius</h2>
+             <p>How can I do stuff to make the world a better place</p>
+             <a href="https://example.com/ai-design">Learn more</a>
+         </div>
+         <div>
+             <i class="fab fa-apple"></i>
+             <h2>UI/UX design</h2>
+             <p>This personal website is a website that just talks about my self and my life.
+                 <a href="https://example.com/app-design">Learn more</a>
+             </div>
+             <div>
+                 <i class="fab fa-apple"></i>
+                 <h2>coding</h2>
+                 <p>My mission for the hidden genius project is to become a better programmer and entrepreneur 
+                 <a href=Hercules Highschool class of 2025>Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+<!--portfolio-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class = "sub-title">My work</h1>
+        <div class="work-list">
+        <div class="work">
+        <img src = "images/work]].jpeg">
+        <div class="layer">
+             <h1>15 years old</h1>
+            <p>I am a genius at the hidden genius project</p>
+            </div>
+        </div>
+    </div>
+    <div class = "work">
+    
+    </div>
+    </div>
+    </div>
+    </body>
+</html>
+            
+        
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+        
+
